@@ -58,7 +58,7 @@ const translatePage = (lng) => {
         downloadButtonElement.textContent = 'Установить';
 
         const stopwatchTextElement = document.querySelector('.stopwatch-text');
-        stopwatchTextElement.textContent = `У вас есть ${stopwatchElement}, чтобы воспользоваться этим предложением!`;
+        stopwatchTextElement.innerHTML = 'У вас есть <span class="stopwatch"></span>, чтобы воспользоваться этим предложением!';
     }
 };
 
