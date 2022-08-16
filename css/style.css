@@ -216,6 +216,7 @@ body {
     .download__mark {
         font-size: 12px;
         padding-left: 0;
+        margin-top: 3px;
     }
 
     .stopwatch-text {
