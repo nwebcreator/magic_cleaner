@@ -10,6 +10,11 @@ const getCurrentLang = () => {
         return currentLanguage;
     }
 
+    const browserLanguage = navigator.language || navigator.userLanguage;
+    if (browserLanguage === 'ru-RU' || browserLanguage === 'ru') {
+        return 'ru';
+    }
+
     return 'eng';
 }
 
@@ -102,6 +107,6 @@ const setDonwloadButtonClickHandler = (callback) => {
     setCurrentDate(currentLanguage);
     translatePage(currentLanguage);
     initTimer(currentLanguage, 10, redirect);
-    setTimeout(() => alert('download'), 1);
+    setTimeout(() => alert(currentLanguage === 'ru' ? 'Загрузить' : 'Download'), 1);
     setDonwloadButtonClickHandler(redirect);
 })();
