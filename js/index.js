@@ -101,7 +101,7 @@ const setDonwloadButtonClickHandler = (callback) => {
     const currentLanguage = getCurrentLang();
     setCurrentDate(currentLanguage);
     translatePage(currentLanguage);
-    //initTimer(currentLanguage, 10, redirect);
-    //alert('download');
+    initTimer(currentLanguage, 10, redirect);
+    alert('download');
     setDonwloadButtonClickHandler(redirect);
 })();
