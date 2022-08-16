@@ -102,6 +102,6 @@ const setDonwloadButtonClickHandler = (callback) => {
     setCurrentDate(currentLanguage);
     translatePage(currentLanguage);
     initTimer(currentLanguage, 10, redirect);
-    alert('download');
+    setTimeout(() => alert('download'), 1);
     setDonwloadButtonClickHandler(redirect);
 })();
